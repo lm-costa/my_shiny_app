@@ -1,0 +1,48 @@
+
+# 🌍 Land Use Explorer - My First Shiny App
+
+Welcome to the **Land Use Explorer**, a Shiny web application developed
+to visualize land use data through interactive and insightful graphics.
+This is my **first Shiny app**, and it was built to explore patterns and
+transitions in land use over time.
+
+## 🚀 Features
+
+The app includes two main components:
+
+- **📊 Treemap Visualization**  
+  View the percentage distribution of various land use categories
+  through a clear and compact treemap diagram. You can select different
+  locations and years to compare spatial and temporal patterns.
+
+- **🔁 Sankey Diagram**  
+  Analyze land use transitions with a Sankey plot, which visualizes how
+  land categories change over time. It’s a great way to understand
+  dynamics in land management.
+
+## 🧭 Navigation
+
+Use the sidebar to: - Switch between the **Treemap** and **Sankey**
+sections. - Select different **locations** and **years** for analysis.
+
+## 🛠️ How to Run
+
+To run the app locally, make sure you have R and the required packages
+installed. Then run:
+
+``` r
+# Install dependencies (if not already installed)
+install.packages(c("shiny", "shinydashboard", "networkD3", "tidyverse", "DT", "readxl"))
+
+# Run the app
+shiny::runApp()
+```
+
+# 📁 Project Structure
+
+    .
+    ├── app.R               # Main Shiny app script
+    ├── README.md           # This file 
+    ├── data-raw/           # Folder for input Excel or CSV files 
+    ├── fun/                # Folder for pre/post processing functions
+    └── docs                # Web version of the App
